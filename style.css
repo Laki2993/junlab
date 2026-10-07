@@ -1,0 +1,2373 @@
+@font-face{
+    font-family:'JoseBold';
+    src: url('/assets/fonts/Josefin_Sans/static/JosefinSans-Bold.ttf');
+}
+
+@font-face{
+    font-family:'JoseMedium';
+    src: url('/assets/fonts/Josefin_Sans/static/JosefinSans-Medium.ttf');
+}
+
+@font-face{
+    font-family:'JoseLight';
+    src: url('/assets/fonts/Josefin_Sans/static/JosefinSans-Light.ttf');
+}
+
+@media screen and (min-width:1920px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    main{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .welcome{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content:center;
+        gap: 1vw;
+        align-items: center;
+    }
+
+    .about{
+        width: 100%;
+        height: 56.25vw;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+    
+    .taskbox{
+        width: 100%;
+        height: 56.25vw;
+        display: grid;
+        justify-items: center;
+        align-items: end;
+        background: linear-gradient(0deg, #5861FF,#8503C2 );
+    }
+
+    .workbox{
+        width: 100%;
+        height: 56.25vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(180deg, #5861FF,#030315 );
+    }
+
+    .usbox{
+        width: 100%;
+        height: 56.25vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        background-color: #020315;
+    }
+
+    .fitbackbox{
+        width: 100%;
+        height: 56.25vw;
+        padding: 2vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        gap: 5vw;
+        align-items:center;
+        background-color: #020315; 
+    }
+
+    .taskbox_title{
+        color: white;
+    }
+
+    .task{
+        width: 90%;
+        height: 40vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .about_textbox{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        gap: 15vw;
+    }
+
+    .about_textbox_text{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 1vw;
+    }
+
+    .about_textbox_box{
+        display: flex;
+        flex-direction: column;
+        gap: 3vw;
+    }
+
+    .qr{
+        width: 10vw;
+        height: 10vw;
+        border-radius: 10%;
+    }
+
+    h2{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        font-size: 3vw;
+        color: #151515;
+    }
+
+    p{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight:100;
+        font-size: 1.7vw;
+        color: #151515;
+    }
+
+    .mainlogo{
+        width: 30vw;
+    }
+
+    .minilogo{
+        width: 12vw;
+    }
+
+    .img1{
+        width: 45vw;
+    }
+
+    .imgwork{
+        width: 40vw;
+    }
+
+    h1{
+        font-family: JoseBold;
+        font-size: 5vw;
+        color: white;
+        flex-shrink: 0;
+        white-space: nowrap;
+    }
+
+    .titlebox{
+        width: 41vw;
+        height: 10vw;
+        background-color: black;
+        display: flex;
+        flex-shrink: 0;
+        object-fit: cover;
+        flex:none;
+        justify-content: center;
+        align-items: center;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        animation-name: welcome;
+        animation-iteration-count: 1;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+    }
+
+    @keyframes welcome{
+        0%{
+            width: 0vw;
+        }
+        50%{
+            width: 0vw;
+        }
+        100%{
+            width: 41vw;
+        }
+    }
+
+    .task_slider{
+        width: fit-content;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        position: relative;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        right: 0vw;
+        transition: 1.5s;
+    }
+
+    .task_slider_item{
+        width: 90vw;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .task_slider_item_text{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight:100;
+        font-size: 2vw;
+        color: white;
+    }
+
+    .task_slider_item_img{
+        width: 50%;
+    }
+
+    .task_slider_pagination{
+        width: 100%;
+        height: 1.5vw;
+        display: flex;
+        justify-content: center;
+        gap: 0.2vw;
+    }
+
+    .cirk{
+        width: 0.7vw;
+        height: 0.7vw;
+        background-color: rgba(255, 255, 255, 0.411);
+        border-radius: 30px;
+        transition: 0.5s;
+    }
+
+    .cirk2{
+        width: 0.7vw;
+        height: 0.7vw;
+        background-color: rgba(255, 255, 255, 0.411);
+        border-radius: 30px;
+        transition: 0.5s;
+    }
+
+    #cirk1{
+        width: 2.5vw;
+        height: 0.7vw;
+        background-color: rgb(255, 255, 255);
+        border-radius: 30px;
+        transition: 0.5s;
+    }
+
+    #cirk01{
+        width: 2.5vw;
+        height: 0.7vw;
+        background-color: rgb(255, 255, 255);
+        border-radius: 30px;
+        transition: 0.5s;
+    }
+
+    .workbox_title{
+        color: white;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight:900;
+        font-size: 2.5vw;
+    }
+
+    .workbox_desc{
+        color: white;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight:100;
+        font-size: 0.9vw;
+    }
+
+    .workbox_mods{
+        width: 100%;
+        height:fit-content;
+        display: flex;
+        justify-content: center;
+        gap: 2vw;
+        align-items: center;
+    }
+
+    .workbox_mod{
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .workbox_mod:not(:hover){
+        transform: scale(1.0);
+        transition: 0.3s;
+    }
+
+    .workbox_mod:hover{
+        transform: scale(1.05);
+        transition: 0.3s;
+    }
+
+    .workbox_mod_text1{
+        width: 100%;
+        height: fit-content;
+        padding: 2vw;
+        background-color: #086BB4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3vw;
+        border-radius: 0.5vw;
+    }
+    
+    .workbox_mod_text2{
+        width: 100%;
+        height: fit-content;
+        padding: 2vw;
+        background-color: #66398E;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3vw;
+        border-radius: 0.5vw;
+    }
+
+    .workbox_mod_title{
+        color: white;
+        font-family: JoseBold;
+        font-size: 5vw;
+    }
+
+    .workbox_mod_desc{
+        color: white;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight:100;
+        font-size: 1.5vw;
+        text-align: center;
+        line-height: 3vw;
+    }
+
+    .usbox_titlebox{
+        width: 94%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .usbox_slider{
+        width: 100%;
+        height: 47vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .usbox_task_slider{
+        width: fit-content;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        position: relative;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        right: 0vw;
+        transition: 1.5s;
+    }
+
+    .usbox_slider_item{
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .usbox_slider_item_img{
+        width: 45%;
+    }
+
+    .usbox_slider_items{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-items: center;
+        gap: 2vw;
+    }
+
+    .usbox_slider_title{
+        color: white;
+        text-shadow: 0vw 0vw 0.5vw white;
+        font-family: JoseBold;
+        font-size: 5vw;
+    }
+
+    .fitback_titile{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight:900;
+        font-size: 8vw;
+        color: #191919;
+        background-color: white;
+        padding: 2vw;
+    }
+
+    .fitbackbox_items{
+        display: flex;
+        justify-content: center;
+        gap: 5vw;
+        align-items: center; 
+    }
+
+    .qrBox{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 2vw;
+    }
+
+    .logo{
+        width: 5vw;
+    }
+
+    img{
+        user-select: none;
+        -webkit-user-drag: none;
+        -webkit-touch-callout: none;
+    }
+
+    .tiles{
+        width: 24vw;
+        height: 7vw;
+    }
+
+    .tiles:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+
+    .tiles:not(:hover){
+        transform: scale(1.0);
+        transition: 0.5s;
+    }
+
+    .usbox_slider_item_img {
+        width: 45vw;
+    }
+
+    .figma,.vscode,.illustrator{
+        animation-name: cirk;
+        animation-duration: 200s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes cirk{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+}
+
+@media screen and (min-width:1200px) and (max-width:1920px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    main{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .welcome{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content:center;
+        gap: 1vw;
+        align-items: center;
+    }
+
+    .about{
+        width: 100%;
+        height: 56.25vw;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+    
+    .taskbox{
+        width: 100%;
+        height: 56.25vw;
+        display: grid;
+        justify-items: center;
+        align-items: end;
+        background: linear-gradient(0deg, #5861FF,#8503C2 );
+    }
+
+    .workbox{
+        width: 100%;
+        height: 56.25vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(180deg, #5861FF,#030315 );
+    }
+
+    .usbox{
+        width: 100%;
+        height: 56.25vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        background-color: #020315;
+    }
+
+    .fitbackbox{
+        width: 100%;
+        height: 56.25vw;
+        padding: 2vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        gap: 5vw;
+        align-items:center;
+        background-color: #020315; 
+    }
+
+    .taskbox_title{
+        color: white;
+    }
+
+    .task{
+        width: 90%;
+        height: 40vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .about_textbox{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        gap: 15vw;
+    }
+
+    .about_textbox_text{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 1vw;
+    }
+
+    .about_textbox_box{
+        display: flex;
+        flex-direction: column;
+        gap: 3vw;
+    }
+
+    .qr{
+        width: 10vw;
+        height: 10vw;
+        border-radius: 10%;
+    }
+
+    h2{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        font-size: 3vw;
+        color: #151515;
+    }
+
+    p{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight:100;
+        font-size: 1.7vw;
+        color: #151515;
+    }
+
+    .mainlogo{
+        width: 30vw;
+    }
+
+    .minilogo{
+        width: 12vw;
+    }
+
+    .img1{
+        width: 45vw;
+    }
+
+    .imgwork{
+        width: 40vw;
+    }
+
+    h1{
+        font-family: JoseBold;
+        font-size: 5vw;
+        color: white;
+        flex-shrink: 0;
+        white-space: nowrap;
+    }
+
+    .titlebox{
+        width: 41vw;
+        height: 10vw;
+        background-color: black;
+        display: flex;
+        flex-shrink: 0;
+        object-fit: cover;
+        flex:none;
+        justify-content: center;
+        align-items: center;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        animation-name: welcome;
+        animation-iteration-count: 1;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+    }
+
+    @keyframes welcome{
+        0%{
+            width: 0vw;
+        }
+        50%{
+            width: 0vw;
+        }
+        100%{
+            width: 41vw;
+        }
+    }
+
+    .task_slider{
+        width: fit-content;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        position: relative;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        right: 0vw;
+        transition: 1.5s;
+    }
+
+    .task_slider_item{
+        width: 90vw;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .task_slider_item_text{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight:100;
+        font-size: 2vw;
+        color: white;
+    }
+
+    .task_slider_item_img{
+        width: 50%;
+    }
+
+    .task_slider_pagination{
+        width: 100%;
+        height: 1.5vw;
+        display: flex;
+        justify-content: center;
+        gap: 0.2vw;
+    }
+
+    .cirk{
+        width: 0.7vw;
+        height: 0.7vw;
+        background-color: rgba(255, 255, 255, 0.411);
+        border-radius: 30px;
+        transition: 0.5s;
+    }
+
+    .cirk2{
+        width: 0.7vw;
+        height: 0.7vw;
+        background-color: rgba(255, 255, 255, 0.411);
+        border-radius: 30px;
+        transition: 0.5s;
+    }
+
+    #cirk1{
+        width: 2.5vw;
+        height: 0.7vw;
+        background-color: rgb(255, 255, 255);
+        border-radius: 30px;
+        transition: 0.5s;
+    }
+
+    #cirk01{
+        width: 2.5vw;
+        height: 0.7vw;
+        background-color: rgb(255, 255, 255);
+        border-radius: 30px;
+        transition: 0.5s;
+    }
+
+    .workbox_title{
+        color: white;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight:900;
+        font-size: 2.5vw;
+    }
+
+    .workbox_desc{
+        color: white;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight:100;
+        font-size: 0.9vw;
+    }
+
+    .workbox_mods{
+        width: 100%;
+        height:fit-content;
+        display: flex;
+        justify-content: center;
+        gap: 2vw;
+        align-items: center;
+    }
+
+    .workbox_mod{
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .workbox_mod:not(:hover){
+        transform: scale(1.0);
+        transition: 0.3s;
+    }
+
+    .workbox_mod:hover{
+        transform: scale(1.05);
+        transition: 0.3s;
+    }
+
+    .workbox_mod_text1{
+        width: 100%;
+        height: fit-content;
+        padding: 2vw;
+        background-color: #086BB4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3vw;
+        border-radius: 0.5vw;
+    }
+    
+    .workbox_mod_text2{
+        width: 100%;
+        height: fit-content;
+        padding: 2vw;
+        background-color: #66398E;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3vw;
+        border-radius: 0.5vw;
+    }
+
+    .workbox_mod_title{
+        color: white;
+        font-family: JoseBold;
+        font-size: 5vw;
+    }
+
+    .workbox_mod_desc{
+        color: white;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight:100;
+        font-size: 1.5vw;
+        text-align: center;
+        line-height: 3vw;
+    }
+
+    .usbox_titlebox{
+        width: 94%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .usbox_slider{
+        width: 100%;
+        height: 47vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .usbox_task_slider{
+        width: fit-content;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        position: relative;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        right: 0vw;
+        transition: 1.5s;
+    }
+
+    .usbox_slider_item{
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .usbox_slider_item_img{
+        width: 45%;
+    }
+
+    .usbox_slider_items{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-items: center;
+        gap: 2vw;
+    }
+
+    .usbox_slider_title{
+        color: white;
+        text-shadow: 0vw 0vw 0.5vw white;
+        font-family: JoseBold;
+        font-size: 5vw;
+    }
+
+    .fitback_titile{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight:900;
+        font-size: 8vw;
+        color: #191919;
+        background-color: white;
+        padding: 2vw;
+    }
+
+    .fitbackbox_items{
+        display: flex;
+        justify-content: center;
+        gap: 5vw;
+        align-items: center; 
+    }
+
+    .qrBox{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 2vw;
+    }
+
+    .logo{
+        width: 5vw;
+    }
+
+    img{
+        user-select: none;
+        -webkit-user-drag: none;
+        -webkit-touch-callout: none;
+    }
+
+    .tiles{
+        width: 24vw;
+        height: 7vw;
+    }
+
+    .tiles:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+
+    .tiles:not(:hover){
+        transform: scale(1.0);
+        transition: 0.5s;
+    }
+
+    .usbox_slider_item_img {
+        width: 45vw;
+    }
+
+    .figma,.vscode,.illustrator{
+        animation-name: cirk;
+        animation-duration: 200s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes cirk{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+}
+
+@media screen and (min-width:900px) and (max-width:1200px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    main{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .welcome{
+        width: 100%;
+        height: 100vh;        
+        display: flex;
+        justify-content:center;
+        gap: 1vw;
+        align-items: center;
+    }
+
+    .about{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .taskbox{
+        width: 100%;
+        height: 70vh;
+        display: grid;
+        justify-items: center;
+        align-items: end;
+        background: linear-gradient(0deg, #5861FF,#8503C2 );
+    }
+
+    .workbox{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4vw;
+        align-items: center;
+        background: linear-gradient(180deg, #5861FF,#030315 );
+    }
+
+    .usbox{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #020315;
+    }
+
+    .fitbackbox{
+        width: 100%;
+        height: 50vh;
+        padding: 2vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        gap: 5vw;
+        align-items:center;
+        background-color: #020315; 
+    }
+
+    .taskbox_title{
+        color: white;
+    }
+
+    .task{
+        width: 90%;
+        height: 80vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .about_textbox{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        gap: 15vw;
+    }
+
+    .about_textbox_text{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        gap: 1vw;
+    }
+
+    .about_textbox_box{
+        display: flex;
+        flex-direction: column;
+        gap: 3vw;
+    }
+
+    .qr{
+        width: 20vw;
+        height: 20vw;
+        border-radius: 10%;
+    }
+
+    h2{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        font-size: 7vw;
+        color: #151515;
+    }
+
+    p{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight:100;
+        font-size: 3vw;
+        text-align: center;
+        color: #151515;
+    }
+
+    .mainlogo{
+        width: 30vw;
+    }
+
+    .minilogo{
+        width: 20vw;
+    }
+
+    .img1{
+        width: 45vw;
+        display: none;
+    }
+
+    .imgwork{
+        width: 60vw;
+    }
+
+    h1{
+        font-family: JoseBold;
+        font-size: 5vw;
+        color: white;
+        flex-shrink: 0;
+        white-space: nowrap;
+    }
+
+    .titlebox{
+        width: 41vw;
+        height: 10vw;
+        background-color: black;
+        display: flex;
+        flex-shrink: 0;
+        object-fit: cover;
+        flex:none;
+        justify-content: center;
+        align-items: center;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        animation-name: welcome;
+        animation-iteration-count: 1;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+    }
+
+    @keyframes welcome{
+        0%{
+            width: 0vw;
+        }
+        50%{
+            width: 0vw;
+        }
+        100%{
+            width: 41vw;
+        }
+    }
+
+    .task_slider{
+        width: fit-content;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        position: relative;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        right: 0vw;
+        transition: 1.5s;
+    }
+
+    .task_slider_item{
+        width: 90vw;
+        height: 100%;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .task_slider_item_text{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight:100;
+        font-size: 3vw;
+        color: white;
+    }
+
+    .task_slider_item_img{
+        width: 70%;
+    }
+
+    .task_slider_pagination{
+        width: 100%;
+        height: 1.5vw;
+        display: flex;
+        justify-content: center;
+        gap: 0.2vw;
+    }
+
+    .cirk{
+        width: 0.7vw;
+        height: 0.7vw;
+        background-color: rgba(255, 255, 255, 0.411);
+        border-radius: 30px;
+        transition: 0.5s;
+    }
+
+    .cirk2{
+        width: 0.7vw;
+        height: 0.7vw;
+        background-color: rgba(255, 255, 255, 0.411);
+        border-radius: 30px;
+        transition: 0.5s;
+    }
+
+    #cirk1{
+        width: 2.5vw;
+        height: 0.7vw;
+        background-color: rgb(255, 255, 255);
+        border-radius: 30px;
+        transition: 0.5s;
+    }
+
+    #cirk01{
+        width: 2.5vw;
+        height: 0.7vw;
+        background-color: rgb(255, 255, 255);
+        border-radius: 30px;
+        transition: 0.5s;
+    }
+
+    .workbox_title{
+        color: white;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight:900;
+        font-size: 4.5vw;
+    }
+
+    .workbox_desc{
+        color: white;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight:100;
+        font-size: 2vw;
+    }
+
+    .workbox_mods{
+        width: 100%;
+        height:fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2vw;
+        align-items: center;
+    }
+
+    .workbox_mod{
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .workbox_mod:not(:hover){
+        transform: scale(1.0);
+        transition: 0.3s;
+    }
+
+    .workbox_mod:hover{
+        transform: scale(1.05);
+        transition: 0.3s;
+    }
+
+    .workbox_mod_text1{
+        width: 100%;
+        height: fit-content;
+        padding: 2vw;
+        background-color: #086BB4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3vw;
+        border-radius: 0.5vw;
+    }
+    
+    .workbox_mod_text2{
+        width: 100%;
+        height: fit-content;
+        padding: 2vw;
+        background-color: #66398E;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3vw;
+        border-radius: 0.5vw;
+    }
+
+    .workbox_mod_title{
+        color: white;
+        font-family: JoseBold;
+        font-size: 7vw;
+    }
+
+    .workbox_mod_desc{
+        color: white;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight:100;
+        font-size: 2vw;
+        text-align: center;
+        line-height: 3vw;
+    }
+
+    .usbox_titlebox{
+        width: 94%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .usbox_slider{
+        width: 95%;
+        height: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .usbox_task_slider{
+        width: fit-content;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        position: relative;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        right: 0vw;
+        transition: 1.5s;
+    }
+
+    .usbox_slider_item{
+        width: 100vw;
+        height: 100%;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .usbox_slider_item_img{
+        width: 45%;
+    }
+
+    .usbox_slider_items{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-items: center;
+        gap: 2vw;
+    }
+
+    .usbox_slider_title{
+        color: white;
+        text-shadow: 0vw 0vw 0.5vw white;
+        font-family: JoseBold;
+        font-size: 3vw;
+    }
+
+    .fitback_titile{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight:900;
+        font-size: 8vw;
+        color: #191919;
+        background-color: white;
+        padding: 2vw;
+    }
+
+    .fitbackbox_items{
+        display: flex;
+        justify-content: center;
+        gap: 5vw;
+        align-items: center; 
+    }
+
+    .qrBox{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 2vw;
+    }
+
+    .qrs{
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo{
+        width: 5vw;
+    }
+
+    img{
+        user-select: none;
+        -webkit-user-drag: none;
+        -webkit-touch-callout: none;
+    }
+
+    .tiles{
+        width: 20vw;
+        height: 6vw;
+    }
+
+    .tiles:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+
+    .tiles:not(:hover){
+        transform: scale(1.0);
+        transition: 0.5s;
+    }
+
+    .usbox_slider_item_img {
+        width: 75vw;
+    }
+
+    .figma,.vscode,.illustrator{
+        animation-name: cirk;
+        animation-duration: 200s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes cirk{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+}
+
+@media screen and (min-width:700px) and (max-width:900px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    main{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .welcome{
+        width: 100%;
+        height: 100vh;        
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        gap: 1vw;
+        align-items: center;
+    }
+
+    .about{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .taskbox{
+        width: 100%;
+        height: 80vh;
+        display: grid;
+        justify-items: center;
+        align-items: end;
+        background: linear-gradient(0deg, #5861FF,#8503C2 );
+    }
+
+    .workbox{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4vw;
+        align-items: center;
+        background: linear-gradient(180deg, #5861FF,#030315 );
+    }
+
+    .usbox{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5vw;
+        background-color: #020315;
+    }
+
+    .fitbackbox{
+        width: 100%;
+        height: fit-content;
+        padding: 2vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        gap: 5vw;
+        align-items:center;
+        background-color: #020315; 
+    }
+
+    .taskbox_title{
+        color: white;
+    }
+
+    .task{
+        width: 90%;
+        height: 120vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .about_textbox{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        gap: 15vw;
+    }
+
+    .about_textbox_text{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        gap: 1vw;
+    }
+
+    .about_textbox_box{
+        display: flex;
+        flex-direction: column;
+        gap: 3vw;
+    }
+
+    .qr{
+        width: 30vw;
+        height: 30vw;
+        border-radius: 10%;
+    }
+
+    h2{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        font-size: 10vw;
+        color: #151515;
+    }
+
+    p{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight:100;
+        font-size: 4vw;
+        text-align: center;
+        color: #151515;
+    }
+
+    .mainlogo{
+        width: 30vw;
+    }
+
+    .minilogo{
+        width: 30vw;
+    }
+
+    .img1{
+        width: 45vw;
+        display: none;
+    }
+
+    .imgwork{
+        width: 80vw;
+    }
+
+    h1{
+        font-family: JoseBold;
+        font-size: 5vw;
+        color: white;
+        flex-shrink: 0;
+        white-space: nowrap;
+    }
+
+    .titlebox{
+        width: 41vw;
+        height: 10vw;
+        background-color: black;
+        display: flex;
+        flex-shrink: 0;
+        object-fit: cover;
+        flex:none;
+        justify-content: center;
+        align-items: center;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        animation-name: welcome;
+        animation-iteration-count: 1;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+    }
+
+    @keyframes welcome{
+        0%{
+            width: 0vw;
+        }
+        50%{
+            width: 0vw;
+        }
+        100%{
+            width: 41vw;
+        }
+    }
+
+    .task_slider{
+        width: fit-content;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        position: relative;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        right: 0vw;
+        transition: 1.5s;
+    }
+
+    .task_slider_item{
+        width: 90vw;
+        height: 100%;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .task_slider_item_text{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight:100;
+        font-size: 5vw;
+        color: white;
+    }
+
+    .task_slider_item_img{
+        width: 90%;
+    }
+
+    .task_slider_pagination{
+        width: 100%;
+        height: 1.5vw;
+        display: flex;
+        justify-content: center;
+        gap: 0.2vw;
+    }
+
+    .cirk{
+        width: 0.7vw;
+        height: 0.7vw;
+        background-color: rgba(255, 255, 255, 0.411);
+        border-radius: 30px;
+        transition: 0.5s;
+    }
+
+    .cirk2{
+        width: 0.7vw;
+        height: 0.7vw;
+        background-color: rgba(255, 255, 255, 0.411);
+        border-radius: 30px;
+        transition: 0.5s;
+    }
+
+    #cirk1{
+        width: 2.5vw;
+        height: 0.7vw;
+        background-color: rgb(255, 255, 255);
+        border-radius: 30px;
+        transition: 0.5s;
+    }
+
+    #cirk01{
+        width: 2.5vw;
+        height: 0.7vw;
+        background-color: rgb(255, 255, 255);
+        border-radius: 30px;
+        transition: 0.5s;
+    }
+
+    .workbox_title{
+        color: white;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight:900;
+        font-size: 6.5vw;
+    }
+
+    .workbox_desc{
+        color: white;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight:100;
+        font-size: 4vw;
+    }
+
+    .workbox_mods{
+        width: 100%;
+        height:fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2vw;
+        align-items: center;
+    }
+
+    .workbox_mod{
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .workbox_mod:not(:hover){
+        transform: scale(1.0);
+        transition: 0.3s;
+    }
+
+    .workbox_mod:hover{
+        transform: scale(1.05);
+        transition: 0.3s;
+    }
+
+    .workbox_mod_text1{
+        width: 100%;
+        height: fit-content;
+        padding: 4vw;
+        background-color: #086BB4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4vw;
+        border-radius: 0.5vw;
+    }
+    
+    .workbox_mod_text2{
+        width: 100%;
+        height: fit-content;
+        padding: 2vw;
+        background-color: #66398E;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3vw;
+        border-radius: 0.5vw;
+    }
+
+    .workbox_mod_title{
+        color: white;
+        font-family: JoseBold;
+        font-size: 9vw;
+    }
+
+    .workbox_mod_desc{
+        color: white;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight:100;
+        font-size: 4vw;
+        text-align: center;
+        line-height: vw;
+    }
+
+    .usbox_titlebox{
+        width: 94%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .usbox_slider{
+        width: 95%;
+        height: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .usbox_task_slider{
+        width: fit-content;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        position: relative;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        right: 0vw;
+        transition: 1.5s;
+    }
+
+    .usbox_slider_item{
+        width: 100vw;
+        height: 100%;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .usbox_slider_item_img{
+        width: 45%;
+    }
+
+    .usbox_slider_items{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-items: center;
+        gap: 2vw;
+    }
+
+    .usbox_slider_title{
+        width: 100%;
+        color: white;
+        text-shadow: 0vw 0vw 0.5vw white;
+        font-family: JoseBold;
+        font-size: 5vw;
+    }
+
+    .fitback_titile{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight:900;
+        font-size: 8vw;
+        color: #191919;
+        background-color: white;
+        padding: 2vw;
+    }
+
+    .fitbackbox_items{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5vw;
+        align-items: center; 
+    }
+
+    .qrBox{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 2vw;
+    }
+
+    .qrs{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        gap: 5vw;
+    }
+
+    .logo{
+        width: 5vw;
+    }
+
+    img{
+        user-select: none;
+        -webkit-user-drag: none;
+        -webkit-touch-callout: none;
+    }
+
+    .tiles{
+        width: 20vw;
+        height: 6vw;
+    }
+
+    .tiles:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+
+    .tiles:not(:hover){
+        transform: scale(1.0);
+        transition: 0.5s;
+    }
+
+    .usbox_slider_item_img {
+        width: 75vw;
+    }
+
+    .figma,.vscode,.illustrator{
+        animation-name: cirk;
+        animation-duration: 200s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes cirk{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:700px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    main{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .welcome{
+        width: 100%;
+        height: 100vh;        
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        gap: 1vw;
+        align-items: center;
+    }
+
+    .about{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .taskbox{
+        width: 100%;
+        height: 110vh;
+        display: grid;
+        gap: 5vw;
+        justify-items: center;
+        align-items: end;
+        background: linear-gradient(0deg, #5861FF,#8503C2 );
+    }
+
+    .workbox{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4vw;
+        align-items: center;
+        background: linear-gradient(180deg, #5861FF,#030315 );
+    }
+
+    .usbox{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5vw;
+        background-color: #020315;
+    }
+
+    .fitbackbox{
+        width: 100%;
+        height: fit-content;
+        padding: 6vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        gap: 5vw;
+        align-items:center;
+        background-color: #020315; 
+    }
+
+    .taskbox_title{
+        color: white;
+    }
+
+    .task{
+        width: 90%;
+        height: 120vw;
+        display: flex;
+        gap: 5vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .about_textbox{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        gap: 15vw;
+    }
+
+    .about_textbox_text{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        gap: 1vw;
+    }
+
+    .about_textbox_box{
+        display: flex;
+        flex-direction: column;
+        gap: 6vw;
+    }
+
+    .qr{
+        width: 30vw;
+        height: 30vw;
+        border-radius: 10%;
+    }
+
+    h2{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        font-size: 13vw;
+        color: #151515;
+    }
+
+    p{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight:100;
+        font-size: 6vw;
+        text-align: center;
+        color: #151515;
+    }
+
+    .mainlogo{
+        width: 40vw;
+    }
+
+    .minilogo{
+        width: 40vw;
+    }
+
+    .img1{
+        width: 45vw;
+        display: none;
+    }
+
+    .imgwork{
+        width: 90vw;
+    }
+
+    h1{
+        font-family: JoseBold;
+        font-size: 10vw;
+        color: white;
+        flex-shrink: 0;
+        white-space: nowrap;
+    }
+
+    .titlebox{
+        width: 80vw;
+        height: 15vw;
+        background-color: black;
+        display: flex;
+        flex-shrink: 0;
+        object-fit: cover;
+        flex:none;
+        justify-content: center;
+        align-items: center;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        animation-name: welcome;
+        animation-iteration-count: 1;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+    }
+
+    @keyframes welcome{
+        0%{
+            width: 0vw;
+        }
+        50%{
+            width: 0vw;
+        }
+        100%{
+            width: 41vw;
+        }
+    }
+
+    .task_slider{
+        width: fit-content;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        position: relative;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        right: 0vw;
+        transition: 1.5s;
+    }
+
+    .task_slider_item{
+        width: 90vw;
+        height: 100%;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .task_slider_item_text{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight:100;
+        font-size: 7vw;
+        color: white;
+    }
+
+    .task_slider_item_img{
+        width: 100%;
+    }
+
+    .task_slider_pagination{
+        width: 100%;
+        height: 1.5vw;
+        display: flex;
+        justify-content: center;
+        gap: 0.2vw;
+    }
+
+    .cirk{
+        width: 0.7vw;
+        height: 0.7vw;
+        background-color: rgba(255, 255, 255, 0.411);
+        border-radius: 30px;
+        transition: 0.5s;
+    }
+
+    .cirk2{
+        width: 0.7vw;
+        height: 0.7vw;
+        background-color: rgba(255, 255, 255, 0.411);
+        border-radius: 30px;
+        transition: 0.5s;
+    }
+
+    #cirk1{
+        width: 2.5vw;
+        height: 0.7vw;
+        background-color: rgb(255, 255, 255);
+        border-radius: 30px;
+        transition: 0.5s;
+    }
+
+    #cirk01{
+        width: 2.5vw;
+        height: 0.7vw;
+        background-color: rgb(255, 255, 255);
+        border-radius: 30px;
+        transition: 0.5s;
+    }
+
+    .workbox_title{
+        color: white;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight:900;
+        font-size: 8.5vw;
+    }
+
+    .workbox_desc{
+        color: white;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight:100;
+        font-size: 5vw;
+    }
+
+    .workbox_mods{
+        width: 100%;
+        height:fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10vw;
+        align-items: center;
+    }
+
+    .workbox_mod{
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .workbox_mod:not(:hover){
+        transform: scale(1.0);
+        transition: 0.3s;
+    }
+
+    .workbox_mod:hover{
+        transform: scale(1.05);
+        transition: 0.3s;
+    }
+
+    .workbox_mod_text1{
+        width: 100%;
+        height: fit-content;
+        padding: 4vw;
+        background-color: #086BB4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4vw;
+        border-radius: 0.5vw;
+    }
+    
+    .workbox_mod_text2{
+        width: 100%;
+        height: fit-content;
+        padding: 2vw;
+        background-color: #66398E;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3vw;
+        border-radius: 0.5vw;
+    }
+
+    .workbox_mod_title{
+        color: white;
+        font-family: JoseBold;
+        font-size: 12vw;
+    }
+
+    .workbox_mod_desc{
+        color: white;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight:100;
+        font-size: 5vw;
+        text-align: center;
+        line-height: 8vw;
+    }
+
+    .usbox_titlebox{
+        width: 94%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .usbox_slider{
+        width: 95%;
+        height: 140vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .usbox_task_slider{
+        width: fit-content;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        position: relative;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        right: 0vw;
+        transition: 1.5s;
+    }
+
+    .usbox_slider_item{
+        width: 100vw;
+        height: 100%;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .usbox_slider_item_img{
+        width: 45%;
+    }
+
+    .usbox_slider_items{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 2vw;
+    }
+
+    .usbox_slider_title{
+        width: 100%;
+        color: white;
+        text-shadow: 0vw 0vw 0.5vw white;
+        font-family: JoseBold;
+        font-size: 5vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .fitback_titile{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight:900;
+        font-size: 8vw;
+        color: #191919;
+        background-color: white;
+        padding: 2vw;
+    }
+
+    .fitbackbox_items{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5vw;
+        align-items: center; 
+    }
+
+    .qrBox{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 2vw;
+    }
+
+    .qrs{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        gap: 5vw;
+    }
+
+    .logo{
+        width: 10vw;
+    }
+
+    img{
+        user-select: none;
+        -webkit-user-drag: none;
+        -webkit-touch-callout: none;
+    }
+
+    .tiles{
+        width: 20vw;
+        height: 6vw;
+    }
+
+    .tiles:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+
+    .tiles:not(:hover){
+        transform: scale(1.0);
+        transition: 0.5s;
+    }
+
+    .usbox_slider_item_img {
+        width: 85vw;
+    }
+
+    .figma,.vscode,.illustrator{
+        animation-name: cirk;
+        animation-duration: 200s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes cirk{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+}
+
