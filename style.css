@@ -1444,16 +1444,16 @@
     
     .taskbox{
         width: 100%;
-        height: 80vh;
+        height: 170vw;
         display: grid;
         justify-items: center;
-        align-items: end;
+        align-items: center;
         background: linear-gradient(0deg, #5861FF,#8503C2 );
     }
 
     .workbox{
         width: 100%;
-        height: 100vh;
+        height: fit-content;
         display: flex;
         flex-direction: column;
         justify-content: center;
