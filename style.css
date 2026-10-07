@@ -1923,7 +1923,7 @@
     
     .taskbox{
         width: 100%;
-        height: fit-content;
+        height: 250vw;
         display: grid;
         gap: 5vw;
         justify-items: center;
