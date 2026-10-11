@@ -1,5 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
     
+    document.getElementById('tg1').addEventListener('click', () => {
+        location.href = 'https://t.me/Yjinvoice'
+    });
+    document.getElementById('tg2').addEventListener('click', () => {
+        location.href = 'https://t.me/Yjinvoice'
+    });
+
+    document.getElementById('vk1').addEventListener('click', () => {
+        location.href = 'https://vk.ru/yjininheart'
+    });
+    document.getElementById('vk2').addEventListener('click', () => {
+        location.href = 'https://vk.ru/yjininheart'
+    });
+
     let cont = 0;
     let cont2 = 0;
   

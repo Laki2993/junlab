@@ -122,9 +122,20 @@
     }
 
     .qr{
-        width: 10vw;
-        height: 10vw;
+        width: 5vw;
+        height: 5vw;
         border-radius: 10%;
+    }
+
+    .qr:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+
+    .qrs{
+        display: flex;
+        justify-content: start;
+        gap: 1vw;
     }
 
     h2{
@@ -431,6 +442,11 @@
 
     .logo{
         width: 5vw;
+    }
+
+    .logo:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
     }
 
     img{
@@ -584,9 +600,20 @@
     }
 
     .qr{
-        width: 10vw;
-        height: 10vw;
+        width: 5vw;
+        height: 5vw;
         border-radius: 10%;
+    }
+
+    .qr:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+
+    .qrs{
+        display: flex;
+        justify-content: start;
+        gap: 1vw;
     }
 
     h2{
@@ -893,6 +920,11 @@
 
     .logo{
         width: 5vw;
+    }
+
+    .logo:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
     }
 
     img{
@@ -1047,9 +1079,20 @@
     }
 
     .qr{
-        width: 20vw;
-        height: 20vw;
+        width: 10vw;
+        height: 10vw;
         border-radius: 10%;
+    }
+
+    .qr:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+
+    .qrs{
+        display: flex;
+        justify-content: start;
+        gap: 2vw;
     }
 
     h2{
@@ -1367,6 +1410,11 @@
         width: 5vw;
     }
 
+    .logo:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+
     img{
         user-select: none;
         -webkit-user-drag: none;
@@ -1521,9 +1569,20 @@
     }
 
     .qr{
-        width: 30vw;
-        height: 30vw;
+        width: 15vw;
+        height: 15vw;
         border-radius: 10%;
+    }
+
+    .qr:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+
+    .qrs{
+        display: flex;
+        justify-content: start;
+        gap: 1vw;
     }
 
     h2{
@@ -1846,6 +1905,11 @@
         width: 5vw;
     }
 
+    .logo:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+
     img{
         user-select: none;
         -webkit-user-drag: none;
@@ -2006,6 +2070,11 @@
         width: 30vw;
         height: 30vw;
         border-radius: 10%;
+    }
+
+    .qr:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
     }
 
     h2{
@@ -2328,6 +2397,11 @@
 
     .logo{
         width: 10vw;
+    }
+
+    .logo:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
     }
 
     img{
